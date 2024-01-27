@@ -43,9 +43,86 @@
                 </div>
             </div>
         </nav>
-        <main class="row" style=" width: 80%; margin: 0 auto; margin-top: 20px; background-color: rgba(255, 255, 255, 0.966); margin-bottom: 10px;">
+        <main class="row" style=" width: 80%; margin: 0 auto; margin-top: 20px; margin-bottom: 10px;">
         <article class="row" style="position: relative;">
-           
+            <div class="quiz-container">
+                <h1>Boszorkány Kvíz</h1><br>
+                <p>1: Mi a kedvenc színed?</p>
+                <label>
+                  <input type="radio" name="question1" value="5"> Kék
+                </label>
+                <label>
+                  <input type="radio" name="question1" value="3"> Lila
+                </label>
+                <label>
+                  <input type="radio" name="question1" value="1"> Fekete
+                </label>
+                <label>
+                    <input type="radio" name="question1" value="2"> Ezek közül egyik se!
+                  </label><br><br>
+            
+                
+                <p>2: Melyik varázslatott választanád?</p>
+                <label>
+                  <input type="radio" name="question2" value="5"> Árnyék manipuláció
+                </label>
+                <label>
+                  <input type="radio" name="question2" value="3"> Természetvarázs
+                </label>
+                <label>
+                  <input type="radio" name="question2" value="1"> Idő manipuláció
+                </label>
+                <label>
+                    <input type="radio" name="question2" value="2"> Ezek közül egyik se!
+                </label><br><br>
+            
+               
+                <p>3: Melyik állat lenne a társad a varázslatokban?</p>
+                <label>
+                  <input type="radio" name="question3" value="5"> Fekete macska
+                </label>
+                <label>
+                  <input type="radio" name="question3" value="3"> Bagoly
+                </label>
+                <label>
+                  <input type="radio" name="question3" value="1"> Farkas
+                </label>
+                <label>
+                    <input type="radio" name="question3" value="2"> Ezek közül egyik se!
+                </label><br><br>
+            
+                <button onclick="showResult()">Eredmény megtekintése</button>
+                <div id="result"></div>
+                
+              </div>
+              <script>
+                function showResult() {
+                  const answers = document.querySelectorAll('input:checked');
+                  let totalScore = 0;
+            
+                  answers.forEach(answer => {
+                    totalScore += parseInt(answer.value);
+                  });
+            
+                  let result = '';
+                  let imagePath = '';
+                  
+                  if (totalScore >= 12) {
+                    result = "<h2>Te egy árnyékboszorkány vagy!</h2><br><p>Az árnyék boszorkány rejtélyes és magányos. Képes a háttérbe húzódni és láthatatlanná válni. Elszánt és céltudatos, küzdenek azokért, akiket szeretnek.</p>";
+                    imagePath = 'letölté.jpg';
+                  } else if (totalScore >= 6) {
+                    result = "<h2>Te egy hóboszorkány vagy!</h2><br><p>Hideg kívül, meleg szívvel. Csendes, de határozott. Szeretetteljes és védelmező a családjához és az otthonához. Kreatív és romantikus, gyakran kapcsolatban állnak a természettel. Képesek az önzetlenségre és a szolidaritásra.</p>";
+                    imagePath = 'letölté.jpg';
+                  } else {
+                    result = "Nincs kijelölve gomb!";
+                    imagePath = 'sad.jpg'; 
+                    document.getElementById('result').style.color = 'red';
+                  }
+            
+                    const resultContainer = document.getElementById('result');
+                    resultContainer.innerHTML = `<p>${result}</p><img src="${imagePath}" alt="${result}">`;
+                }
+              </script>
         </article>
         <footer style="text-align: center; background-color: black; color: white; padding-top: 10px;">
             <p>©Minden jog fenntartva! </p>
