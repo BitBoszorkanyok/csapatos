@@ -1,0 +1,17 @@
+
+article{
+    padding: 10px;
+}
+aside{
+    padding: 10px;
+}
+header{
+    padding: 10px;
+}
+.navbar-brand img {
+    max-height: 50px;
+    margin-right: 10px; 
+}
+.navbar-nav .nav-link {
+    font-size: 18px;
+}
