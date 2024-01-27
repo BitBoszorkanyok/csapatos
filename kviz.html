@@ -71,7 +71,8 @@
                 </label>
                 <label>
                   <input type="radio" name="question2" value="1"> Idő manipuláció
-                </label>
+                </label><br><br>
+            
                
                 <p>3: Melyik állat lenne a társad a varázslatokban?</p>
                 <label>
@@ -82,7 +83,7 @@
                 </label>
                 <label>
                   <input type="radio" name="question3" value="1"> Farkas
-                </label>
+                </label><br><br>
             
                 <button onclick="showResult()">Eredmény megtekintése</button>
                 <div id="result"></div>
@@ -100,16 +101,18 @@
                   let result = '';
                   let imagePath = '';
                   
-                  if (totalScore >= 12) {
+                  if (totalScore > 12) {
                     result = "<h2>Te egy árnyékboszorkány vagy!</h2><br><p>Az árnyék boszorkány rejtélyes és magányos. Képes a háttérbe húzódni és láthatatlanná válni. Elszánt és céltudatos, küzdenek azokért, akiket szeretnek.</p>";
                     imagePath = 'letölté.jpg';
-                  } else if (totalScore >= 6) {
+                  } else if (totalScore >= 6 && totalScore <= 12) {
+                    result = "<h2>Te egy csillagboszorkány vagy!</h2><br><p>Filozófikus és elmélyült. Álmodozó és bölcs, aki gyakran gondolkodik a világmindenségről. Szereti a magányos időtöltéseket az éjszakai égbolt alatt. Empatikus és segítőkész, hisz az univerzum szinkronicitásában és az egyetemes energiákban.</p>";
+                    imagePath = 'letölté.jpg';
+                  } else if (totalScore < 6) {
                     result = "<h2>Te egy hóboszorkány vagy!</h2><br><p>Hideg kívül, meleg szívvel. Csendes, de határozott. Szeretetteljes és védelmező a családjához és az otthonához. Kreatív és romantikus, gyakran kapcsolatban állnak a természettel. Képesek az önzetlenségre és a szolidaritásra.</p>";
                     imagePath = 'letölté.jpg';
                   } else {
                     result = "Nincs kijelölve gomb!";
                     imagePath = 'sad.jpg'; 
-                    document.getElementById('result').style.color = 'red';
                   }
             
                     const resultContainer = document.getElementById('result');
