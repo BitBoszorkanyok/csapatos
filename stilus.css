@@ -25,10 +25,18 @@ header{
 .quiz-container img{
     max-height: 50px;
     margin-right: 10px;
+    margin-top: 10px;
+    display: block; 
+    margin: 0 auto;
 }
-  #result {
+#result h2{
     font-size: 18px;
     font-weight: bold;
     text-align: center;
+    margin-top: 10px;
+}
+#result p{
+    font-size: 18px;
+    text-align: justify;
     margin-top: 10px;
 }
