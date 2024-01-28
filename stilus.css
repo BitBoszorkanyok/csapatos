@@ -8,6 +8,9 @@ aside{
 header{
     padding: 10px;
 }
+nav li:hover a{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.322);
+}
 .navbar-brand img {
     max-height: 50px;
     margin-right: 10px; 
