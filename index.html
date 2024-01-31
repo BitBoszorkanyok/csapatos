@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="stilus.css">
     <title>BitBoszorkányok</title>
 </head>
-<body style="background-color: rgb(43, 40, 46); width: 60%; margin: 0 auto; margin-top: 20px;
+<body style="width: 60%; margin: 0 auto; margin-top: 20px;
 background-image: url(2d8ea1056a5b2b579ca11c49f04f8408.jpg);">
     <main class="row" style="background-color: rgb(222, 220, 253);text-align: center;
     border: 2px solid rgb(255, 255, 255); border-radius: 10px; background: transparent; backdrop-filter: blur(8px);
-    padding: 5px; color: white;
-    box-shadow: 5px 5px 5px #ffffff8a;">
+    padding: 5px; color: white; box-shadow: 5px 5px 5px #ffffff8a; background: linear-gradient(to top, rgba(255, 255, 255, 0.185), rgba(0, 0, 0, 0.233));
+    padding: 30px;">
         <header>
             <h1 style="text-align: center;">Üdvözöljük a BitBoszik oldalán!</h1>
         </header> 
@@ -25,12 +25,12 @@ background-image: url(2d8ea1056a5b2b579ca11c49f04f8408.jpg);">
                     <h2>Bejelentkezés</h2>
                     <form action="kezdolap.html">
                         <label for="fname">Felhasználó név:</label><br>
-                        <input type="text" id="username" name="username" placeholder="Felhasználónév" style="box-shadow: 5px 5px 5px #ffffff44;border-radius: 10px; background: transparent; backdrop-filter: blur(8px);
-                        padding: 5px; color: white;border: 1px solid rgb(255, 255, 255);" required><br>
+                        <input type="text" id="username" class="gomb" name="username" placeholder="Felhasználónév" required><br>
                         <label for="lname">Jelszó:</label><br>
-                        <input type="password" id="pwd" name="pwd" placeholder="Jelszó" minlength="8" style="box-shadow: 5px 5px 5px #ffffff44;border-radius: 10px; background: transparent; backdrop-filter: blur(8px);
-                        padding: 5px; color: white; border: 1px solid rgb(255, 255, 255);" required><br><br>
-                        <input type="submit" value="Bejelentkezés" style="background-color: rgba(0, 0, 0, 0); color: white; border-radius: 10px; box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.199);">
+                        <input type="password" id="pwd" class="gomb" name="pwd" placeholder="Jelszó" minlength="8" required><br><br>
+                        <input type="submit" style="background-color: rgba(0, 0, 0, 0.068); border:1px solid white; border-radius: 10px;  width: 150px; height: 30px; color: white;
+                        transition: all 0.15s;" class="bgomb" value="Bejelentkezés">
+                      </form> 
                       </form> 
             </div>
         </article>
@@ -39,18 +39,15 @@ background-image: url(2d8ea1056a5b2b579ca11c49f04f8408.jpg);">
                 <h2>Regisztráció</h2>
                 <form action="kezdolap.html">
                     <label for="fname">Felhasználónév:</label><br>
-                    <input type="text" id="username" name="username" placeholder="Felhasználónév" style="box-shadow: 5px 5px 5px #ffffff8a;border-radius: 10px; background: transparent; backdrop-filter: blur(8px);
-                    padding: 5px; color: white; border: 1px solid rgb(255, 255, 255);"  required><br>
+                    <input type="text" id="username" class="gomb" name="username" placeholder="Felhasználónév" required><br>
                     <label for="fname">Email:</label><br>
-                    <input type="text" id="email" name="email" placeholder="valaki@gmail.com"style="box-shadow: 5px 5px 5px #ffffff8a;border-radius: 10px; background: transparent; backdrop-filter: blur(8px);
-                    padding: 5px; color: white; border: 1px solid rgb(255, 255, 255);" required><br>
+                    <input type="text" id="email" class="gomb" name="email" placeholder="valaki@gmail.com" required><br>
                     <label for="lname">Jelszó:</label><br>
-                    <input type="password" id="pwd" name="pwd" placeholder="Jelszó" minlength="8" style="box-shadow: 5px 5px 5px #ffffff8a;border-radius: 10px; background: transparent; backdrop-filter: blur(8px);
-                    padding: 5px; color: white; border: 1px solid rgb(255, 255, 255);" required><br>
+                    <input type="password" id="pwd" class="gomb" name="pwd" placeholder="Jelszó" minlength="8"  required><br>
                     <label for="lname">Jelszó megerősítése:</label><br>
-                    <input type="password" id="pwd_m" name="pwd-m" placeholder="Jelszó" minlength="8" style="box-shadow: 5px 5px 5px #ffffff8a;border-radius: 10px; background: transparent; backdrop-filter: blur(8px);
-                    padding: 5px; color: white; border: 1px solid rgb(255, 255, 255);"  required><br><br>
-                    <input type="submit" value="Regisztráció">
+                    <input type="password" id="pwd_m" class="gomb" name="pwd-m" placeholder="Jelszó" minlength="8" required><br><br>
+                    <input type="submit" style="background-color: rgba(0, 0, 0, 0.068); border:1px solid white; border-radius: 10px;  width: 150px; height: 30px; color: white;
+                    transition: all 0.15s;" class="bgomb" value="Regisztráció">
                 </form>
             </div> 
         </aside>
