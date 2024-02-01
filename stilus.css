@@ -69,4 +69,12 @@ nav li:hover a{
                 5px 5px 20px rgb(224, 224, 224);
     transform: scale(1.1);
   }
-  
+
+  .tartalom{
+    margin-bottom: 5%;
+  }
+
+  .cim{
+    margin-bottom: 2%;
+    text-align: center;
+  }
