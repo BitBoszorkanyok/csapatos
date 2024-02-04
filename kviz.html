@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="stilus.css">
     <title>BitBoszorkányok</title>
 </head>
-<body style="background: linear-gradient(to right, rgb(17, 1, 22), rgb(43, 9, 53));">
+<body style="background: linear-gradient(to right, rgb(59, 29, 68), rgb(91, 59, 100));font-size: calc( 6px + 1vw ) ">
         <header style="background-color: rgb(0, 0, 0); position: relative; z-index: 1;">
             <h1 style="text-align: center; color: white;">Kvíz</h1>
         </header>
@@ -46,151 +46,190 @@
         <main class="row" style=" width: 80%; margin: 0 auto; margin-top: 20px; margin-bottom: 10px;">
         <article class="row" style="position: relative;">
             <div class="quiz-container">
-                <h1>Boszorkány Kvíz</h1><br>
-                <p>1: Mi a kedvenc színed?</p>
-                <label>
-                  <input type="radio" name="question1" value="4"> Kék
-                </label><br>
-                <label>
-                  <input type="radio" name="question1" value="3"> Lila
-                </label><br>
-                <label>
-                  <input type="radio" name="question1" value="2"> Fekete
-                </label><br>
-                <label>
-                    <input type="radio" name="question1" value="1"> Ezek közül egyik se!
-                  </label><br><br>
-            
-                
-                <p>2: Hogyan reagálsz a kihívásokra az életedben?</p>
-                <label>
-                  <input type="radio" name="question2" value="4"> Szeretem, mint izgalmas kalandokat.
-                </label><br>
-                <label>
-                  <input type="radio" name="question2" value="3"> Próbálom elkerülni azokat.
-                </label><br>
-                <label>
-                  <input type="radio" name="question2" value="2"> Vegyesen, attól függően, milyen típusú a kihívás.
-                </label><br>
-                <label>
-                  <input type="radio" name="question2" value="1"> Szívesen veszem, mint lehetőségeket a személyes növekedésre.
-                </label><br><br>
-            
-               
-                <p>3: Melyik állat lenne a társad a varázslatokban?</p>
-                <label>
-                  <input type="radio" name="question3" value="5"> Fekete macska
-                </label><br>
-                <label>
-                  <input type="radio" name="question3" value="3"> Bagoly
-                </label><br>
-                <label>
-                  <input type="radio" name="question3" value="1"> Farkas
-                </label><br><br>
+              <h4 style="text-align: center;background: linear-gradient(to right, rgb(0, 0, 0), rgb(118, 35, 151));
+              background-clip: text;
+              color: transparent;
+              font-style: italic;
+              font-weight: bold; font-size: larger;  letter-spacing: 2px;">Milyen boszorkány lennél?</h4>
+              <div class="container mt-5">
+                <div id="storyCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      
+                      <div class="carousel-item active">
+                        <p>1: Mi a kedvenc színed?</p>
+                        <label>
+                          <input type="radio" name="question1" value="4"> Kék
+                        </label><br>
+                        <label>
+                          <input type="radio" name="question1" value="3"> Lila
+                        </label><br>
+                        <label>
+                          <input type="radio" name="question1" value="2"> Fekete
+                        </label><br>
+                        <label>
+                            <input type="radio" name="question1" value="1"> Ezek közül egyik se!
+                          </label><br><br>
+                      </div>
+                      
+                    <div class="carousel-item">
+                      <p>2: Hogyan reagálsz a kihívásokra az életedben?</p>
+                      <label>
+                        <input type="radio" name="question2" value="4"> Szeretem, mint izgalmas kalandokat.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question2" value="3"> Próbálom elkerülni azokat.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question2" value="2"> Vegyesen, attól függően, milyen típusú a kihívás.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question2" value="1"> Szívesen veszem, mint lehetőségeket a személyes növekedésre.
+                      </label><br><br>
+                    </div>
+                  
+                    <div class="carousel-item">
+                      <p>3: Melyik állat lenne a társad a varázslatokban?</p>
+                      <label>
+                        <input type="radio" name="question3" value="5"> Fekete macska
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question3" value="3"> Bagoly
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question3" value="1"> Farkas
+                      </label><br><br>
+                    </div>
 
-                <p>4: Milyen módon viszonyulsz az újdonságokhoz és az ismeretlenhez?</p>
-                <label>
-                  <input type="radio" name="question4" value="4"> Nyitottan és kíváncsian.
-                </label><br>
-                <label>
-                  <input type="radio" name="question4" value="3"> Bizonytalanul és óvatosan.
-                </label><br>
-                <label>
-                  <input type="radio" name="question4" value="2"> Attól függ, milyen a konkrét helyzet.
-                </label><br>
-                <label>
-                  <input type="radio" name="question4" value="1"> Szívesen felfedezem, ha vonzó a lehetőség.
-                </label><br><br>
+                    <div class="carousel-item">
+                      <p>4: Milyen módon viszonyulsz az újdonságokhoz és az ismeretlenhez?</p>
+                      <label>
+                        <input type="radio" name="question4" value="4"> Nyitottan és kíváncsian.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question4" value="3"> Bizonytalanul és óvatosan.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question4" value="2"> Attól függ, milyen a konkrét helyzet.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question4" value="1"> Szívesen felfedezem, ha vonzó a lehetőség.
+                      </label><br><br>
+                    </div>
 
-                <p>5: Mik a legfontosabb célok és álmok az életedben?</p>
-                <label>
-                  <input type="radio" name="question5" value="4"> Nagy, merész célok, amikért keményen dolgozom.
-                </label><br>
-                <label>
-                  <input type="radio" name="question5" value="3"> Inkább kisebb, biztonságosabb célokat szeretek kitűzni.
-                </label><br>
-                <label>
-                  <input type="radio" name="question5" value="2"> Nem szeretem a konkrét célokat, inkább élvezem a pillanatot.
-                </label><br>
-                <label>
-                  <input type="radio" name="question5" value="1"> Sok kis és nagy cél egyaránt, mind fontos számomra.
-                </label><br><br>
+                    <div class="carousel-item">
+                      <p>5: Mik a legfontosabb célok és álmok az életedben?</p>
+                      <label>
+                        <input type="radio" name="question5" value="4"> Nagy, merész célok, amikért keményen dolgozom.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question5" value="3"> Inkább kisebb, biztonságosabb célokat szeretek kitűzni.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question5" value="2"> Nem szeretem a konkrét célokat, inkább élvezem a pillanatot.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question5" value="1"> Sok kis és nagy cél egyaránt, mind fontos számomra.
+                      </label><br><br>
+                    </div>
 
-                <p>6: Hogyan reagálsz, amikor mások rád tekintenek vezetőként?</p>
-                <label>
-                  <input type="radio" name="question6" value="4"> Szívesen veszem a vezetői szerepet.
-                </label><br>
-                <label>
-                  <input type="radio" name="question6" value="3"> Nem érzem magam kényelmesen vezetőként.
-                </label><br>
-                <label>
-                  <input type="radio" name="question6" value="2"> Attól függ, milyen a helyzet és a csoport.
-                </label><br>
-                <label>
-                  <input type="radio" name="question6" value="1"> Időnként szívesen vezetek, de nem mindig.
-                </label><br><br>
+                    <div class="carousel-item">
+                      <p>6: Hogyan reagálsz, amikor mások rád tekintenek vezetőként?</p>
+                      <label>
+                        <input type="radio" name="question6" value="4"> Szívesen veszem a vezetői szerepet.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question6" value="3"> Nem érzem magam kényelmesen vezetőként.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question6" value="2"> Attól függ, milyen a helyzet és a csoport.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question6" value="1"> Időnként szívesen vezetek, de nem mindig.
+                      </label><br><br>
+                    </div>
 
-                <p>7: Hogyan fejezed ki a kreativitásodat az életedben?</p>
-                <label>
-                  <input type="radio" name="question7" value="4"> Művészi vagy kreatív tevékenységek révén.
-                </label><br>
-                <label>
-                  <input type="radio" name="question7" value="3">Inkább logikus gondolkodó vagyok.
-                </label><br>
-                <label>
-                  <input type="radio" name="question7" value="2"> Hol az egyik, hol a másik területen.
-                </label><br>
-                <label>
-                  <input type="radio" name="question7" value="1"> Különböző módon, mindennapi életben és hobbikban egyaránt.
-                </label><br><br>
+                    <div class="carousel-item">
+                      <p>7: Hogyan fejezed ki a kreativitásodat az életedben?</p>
+                      <label>
+                        <input type="radio" name="question7" value="4"> Művészi vagy kreatív tevékenységek révén.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question7" value="3">Inkább logikus gondolkodó vagyok.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question7" value="2"> Hol az egyik, hol a másik területen.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question7" value="1"> Különböző módon, mindennapi életben és hobbikban egyaránt.
+                      </label><br><br>
+                    </div>
 
+                      <div class="carousel-item">
+                      <p>8: Hogyan éled meg az élet minden pillanatát?</p>
+                      <label>
+                        <input type="radio" name="question8" value="4"> Intenzíven és teljes szívvel.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question8" value="3"> Biztonságban és kiszámíthatóan.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question8" value="2"> Vegyesen, attól függően, milyen a helyzet.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question8" value="1"> Az élmények és kihívások által inspirálva.
+                      </label><br><br>
+                    </div>
 
-                <p>8: Hogyan éled meg az élet minden pillanatát?</p>
-                <label>
-                  <input type="radio" name="question8" value="4"> Intenzíven és teljes szívvel.
-                </label><br>
-                <label>
-                  <input type="radio" name="question8" value="3"> Biztonságban és kiszámíthatóan.
-                </label><br>
-                <label>
-                  <input type="radio" name="question8" value="2"> Vegyesen, attól függően, milyen a helyzet.
-                </label><br>
-                <label>
-                  <input type="radio" name="question8" value="1"> Az élmények és kihívások által inspirálva.
-                </label><br><br>
+                    <div class="carousel-item">
+                      <p>9: Mennyire vagy nyitott az új kapcsolatokra és barátságokra?</p>
+                      <label>
+                        <input type="radio" name="question9" value="4"> Nagyon nyitott vagyok, szeretek új emberekkel ismerkedni.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question9" value="3"> Inkább tartózkodom, amíg meg nem ismerem jobban az embert.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question9" value="2"> Vegyesen, attól függően, milyen az első benyomás.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question9" value="1"> Nagyon barátkozó típus vagyok, mindig kész vagyok új kapcsolatokra.
+                      </label><br><br>
+                    </div>
 
-                <p>9: Mennyire vagy nyitott az új kapcsolatokra és barátságokra?</p>
-                <label>
-                  <input type="radio" name="question9" value="4"> Nagyon nyitott vagyok, szeretek új emberekkel ismerkedni.
-                </label><br>
-                <label>
-                  <input type="radio" name="question9" value="3"> Inkább tartózkodom, amíg meg nem ismerem jobban az embert.
-                </label><br>
-                <label>
-                  <input type="radio" name="question9" value="2"> Vegyesen, attól függően, milyen az első benyomás.
-                </label><br>
-                <label>
-                  <input type="radio" name="question9" value="1"> Nagyon barátkozó típus vagyok, mindig kész vagyok új kapcsolatokra.
-                </label><br><br>
-
-                <p>10: Milyen mértékben élvezed a szervezést és tervezést az életedben?</p>
-                <label>
-                  <input type="radio" name="question10" value="4"> Nagyon, szeretek mindent előre megtervezni.
-                </label><br>
-                <label>
-                  <input type="radio" name="question10" value="3"> Nem annyira, inkább spontán vagyok.
-                </label><br>
-                <label>
-                  <input type="radio" name="question10" value="2"> Attól függ, milyen eseményről van szó.
-                </label><br>
-                <label>
-                  <input type="radio" name="question10" value="1"> Szeretek tervezni, de hagyok helyet a rugalmasságnak is.
-                </label><br><br>
-            
-                <button onclick="showResult()">Eredmény megtekintése</button>
-                <div id="result"></div>
-                
+                    <div class="carousel-item">
+                      <p>10: Milyen mértékben élvezed a szervezést és tervezést az életedben?</p>
+                      <label>
+                        <input type="radio" name="question10" value="4"> Nagyon, szeretek mindent előre megtervezni.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question10" value="3"> Nem annyira, inkább spontán vagyok.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question10" value="2"> Attól függ, milyen eseményről van szó.
+                      </label><br>
+                      <label>
+                        <input type="radio" name="question10" value="1"> Szeretek tervezni, de hagyok helyet a rugalmasságnak is.
+                      </label><br><br>
+                    
+                  
+                     </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#storyCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Előző</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#storyCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Következő</span>
+                    </button>
+                    
+                  </div>
+                </div>  
               </div>
+              <div style="text-align: center; margin-top: 20px;">
+              <button onclick="showResult()" class="egomb" >Eredmény megtekintése</button>
+              <div id="result"></div>
+            </div>
+           
               <script>
                 function showResult() {
                   const answers = document.querySelectorAll('input:checked');
