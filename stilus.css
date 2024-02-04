@@ -114,5 +114,19 @@ nav li:hover a{
 }
 .carousel-inner{
     box-shadow: 5px 5px 10px rgb(255, 255, 255),
-                5px 5px 20px rgba(255, 255, 255, 0.76);
+                5px 5px 20px rgb(255, 255, 255);
+}
+@media screen and (max-width:800px) {
+    .carousel-item{
+        padding-top: 10px;
+        width: 40%;
+        margin-left: 80px;
+    }
+}
+@media screen and (max-width:400px) {
+    .carousel-item{
+        padding-top: 10px;
+        width: 40%;
+        margin-left: 60px;
+    }
 }
