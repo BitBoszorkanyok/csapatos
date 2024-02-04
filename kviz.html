@@ -16,7 +16,7 @@
         <header style="background-color: rgb(0, 0, 0); position: relative; z-index: 1;">
             <h1 style="text-align: center; color: white;">Kvíz</h1>
         </header>
-        <nav class="row fixed-top navbar navbar-expand-lg navbar-light bg-light sticky-top" style="z-index: 2;">
+        <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light sticky-top" style="z-index: 2;">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="letölté.jpg" alt="Logo">
@@ -53,8 +53,19 @@
               font-weight: bold; font-size: larger;  letter-spacing: 2px;">Milyen boszorkány lennél?</h4>
               <div class="container mt-5">
                 <div id="storyCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" style="background-color: black;" data-bs-target="#storyCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#storyCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#storyCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#storyCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#storyCarousel" data-bs-slide-to="4"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#storyCarousel" data-bs-slide-to="5"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#storyCarousel" data-bs-slide-to="6"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#storyCarousel" data-bs-slide-to="7"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#storyCarousel" data-bs-slide-to="8"></button>
+                    <button type="button" style="background-color: black;" data-bs-target="#storyCarousel" data-bs-slide-to="9"></button>
+                  </div>
                     <div class="carousel-inner">
-                      
                       <div class="carousel-item active">
                         <p>1: Mi a kedvenc színed?</p>
                         <label>
@@ -210,18 +221,7 @@
                       <label>
                         <input type="radio" name="question10" value="1"> Szeretek tervezni, de hagyok helyet a rugalmasságnak is.
                       </label><br><br>
-                    
-                  
-                     </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#storyCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Előző</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#storyCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Következő</span>
-                    </button>
-                    
+                    </div>
                   </div>
                 </div>  
               </div>
