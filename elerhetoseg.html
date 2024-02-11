@@ -14,7 +14,7 @@
 </head>
 <body style="background: linear-gradient(to right, rgb(134, 90, 146),rgb(207, 162, 219));">
         <header style="background-color: rgb(0, 0, 0); position: relative; z-index: 1;">
-            <h1 style="text-align: center; color: white;">Elérhetőség</h1>
+            <h1 id="fooldal" style="text-align: center; color: white;">Elérhetőség</h1>
         </header>
         <nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light sticky-top" style="z-index: 2;">
             <div class="container">
@@ -52,7 +52,7 @@
                 <div class="row">
                     <div class="col-md-8">
                         <div class="container mt-4 p-4 border rounded">
-                            <form action="">
+                            <form>
                                 <div class="mb-3">
                                     <label for="vnev" class="form-label">Vezetéknév: </label>
                                     <input type="text" class="form-control" id="vnev" style="background-color: rgba(255, 255, 255, 0.089); border: none; border-bottom: 1px solid white;color: rgba(240, 248, 255, 0.726);" placeholder="Rubik" required>
@@ -68,8 +68,8 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <img src="5.jpg" class="mx-auto d-block img-fluid rounded-circle" style="margin: 30px; border: 1px solid white; padding: 5px;">
-                        <form action="">
+                        <img src="5.jpg" alt="kep" class="mx-auto d-block img-fluid rounded-circle" style="margin: 30px; border: 1px solid white; padding: 5px;">
+                        <form>
                             <button type="submit" class="mx-auto d-block btn btn-primary vgomb" id="kapcsolat">Kapcsolat felvétel</button>
                         </form>
                     </div>
@@ -79,11 +79,11 @@
                         <h6>Hívjon minket:</h6>
                         <p>+12 345 6789</p>
                     </div>
-                    <div class="col-md-4 border"style="padding-top: 10px;">
+                    <div class="col-md-4 border" style="padding-top: 10px;">
                         <h6>Jöjjön el hozzánk: </h6>
                         <p>Budapest Mérnök utca 39</p>
                     </div>
-                    <div class="col-md-4 border"style="padding-top: 10px;">
+                    <div class="col-md-4 border" style="padding-top: 10px;">
                         <h6>Küldjön nekünk emailt: </h6>
                         <p>bitboszik00@gmail.com</p>
                     </div>
@@ -96,7 +96,7 @@
     </main>
     <script>
         document.getElementById('kapcsolat').addEventListener('click', function(event) {
-            event.preventDefault(); // Az alapértelmezett esemény megakadályozása (az űrlap elküldése)
+            event.preventDefault(); 
     
             alert('Köszönjük a kapcsolatfelvételt!<3');
         });
