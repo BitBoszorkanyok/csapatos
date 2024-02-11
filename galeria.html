@@ -21,23 +21,26 @@
                 <a class="navbar-brand" href="#">
                     <img src="letölté.jpg" alt="Logo">
                 </a>
-                <a class="navbar-brand" href="kezdolap.html">Kezdőlap</a>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="fozet.html">Varázsfőzet</a>
+                            <a class="nav-link active" href="#fooldal">&#11121;</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="kviz.html">Kvíz</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="galeria.html">Galéria </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="elerhetoseg.html">Elérhetőség &#9990;</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Belépés</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Menü
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="kezdolap.html">Kezdőlap</a></li>
+                                <li><a class="dropdown-item" href="fozet.html">Varázsfőzet</a></li>
+                                <li><a class="dropdown-item" href="kviz.html">Kvíz</a></li>
+                                <li><a class="dropdown-item" href="galeria.html">Galéria</a></li>
+                                <li><a class="dropdown-item" href="elerhetoseg.html">Elérhetőség</a></li>
+                                <li><a class="dropdown-item" href="index.html">Belépés</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
