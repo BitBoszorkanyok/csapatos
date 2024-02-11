@@ -10,6 +10,13 @@ aside{
 header{
     padding: 10px;
 }
+.kinezet {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.685);
+    border: 1px solid white;
+    color: white;
+}
 .tartalom>img{
     width: 40%;
     margin: 10px;
@@ -124,10 +131,31 @@ p{
     box-shadow: 5px 5px 10px rgb(224, 224, 224),
                 5px 5px 20px rgb(224, 224, 224);
 }
+.vgomb{
+    margin: 10px;
+    text-align: center;
+    color: rgb(250, 211, 255);
+    border-radius: 50px; 
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0);
+    border: solid 2px rgb(230, 137, 253);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0),
+                5px 5px 5px rgb(3, 1, 1);
+}
+.vgomb:hover{
+    transition: all 2s;
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgb(224, 224, 224),
+                5px 5px 150px rgba(224, 224, 224, 0.596);
+}
 .bgomb{
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
-    border: solid 2px rgb(255, 255, 255);
+    border: solid 1px rgb(255, 255, 255);
     box-shadow: 5px 5px 10px rgb(224, 224, 224),
                 5px 5px 50px rgb(224, 224, 224);
     transition: all 0.15s;
