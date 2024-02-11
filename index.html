@@ -11,46 +11,45 @@
     <link rel="stylesheet" href="stilus.css">
     <title>BitBoszorkányok</title>
 </head>
-<body style="width: 60%; margin: 0 auto; margin-top: 20px;
-background-image: url(23.jpeg);">
-    <main class="row" style="background-color: rgb(222, 220, 253);text-align: center;
-    border: 2px solid rgb(255, 255, 255); border-radius: 10px; background: transparent; backdrop-filter: blur(8px);
-    padding: 5px; color: white; box-shadow: 5px 5px 5px #ffffff8a; background: linear-gradient(to top, rgba(255, 255, 255, 0.185), rgba(0, 0, 0, 0.233));
-    padding: 30px;">
-        <header>
-            <h1 style="text-align: center;">Üdvözöljük a BitBoszik oldalán!</h1>
-        </header> 
-        <article class="col-md-6 row">
-            <div class="form">
-                    <h2>Bejelentkezés</h2>
-                    <form action="kezdolap.html">
-                        <label for="fname">Felhasználó név:</label><br>
-                        <input type="text" id="username" class="gomb" name="username" placeholder="Felhasználónév" required><br>
-                        <label for="lname">Jelszó:</label><br>
-                        <input type="password" id="pwd" class="gomb" name="pwd" placeholder="Jelszó" minlength="8" required><br><br>
-                        <input type="submit" style="background-color: rgba(0, 0, 0, 0.068); border:1px solid white; border-radius: 10px;  width: 150px; height: 30px; color: white;
-                        transition: all 0.15s;" class="bgomb" value="Bejelentkezés">
-                      </form> 
-                      </form> 
+<body style="width: 60%; margin: 0 auto; margin-top: 20px; background-image: url(23.jpeg);">
+    <main>
+    <article class="row container-fluid kinezet" style="position: relative; background-image: url(fg.jpg);">
+        <div class="container-fluid">
+            <div class="row">
+                <header style="text-align: center; width: 100%;">
+                    <h1>Üdvözöljük a BitBoszik oldalán!</h1>
+                </header> 
+                <article class="col-md-6" style=" border: 1px solid white; color: white; text-align: center;">
+                    <div class="form mx-auto" style="width: 80%;">
+                        <h2>Bejelentkezés</h2>
+                        <form action="kezdolap.html">
+                            <label for="fname">Felhasználó név:</label><br>
+                            <input type="text" id="username" class="form-control"style="background-color: rgba(255, 255, 255, 0.089); border: none; border-bottom: 1px solid white; color: rgba(240, 248, 255, 0.726);" name="username" placeholder="Felhasználónév" required><br>
+                            <label for="lname">Jelszó:</label><br>
+                            <input type="password" id="pwd" class="form-control"style="background-color: rgba(255, 255, 255, 0.089); border: none; border-bottom: 1px solid white; color: rgba(240, 248, 255, 0.726);" name="pwd" placeholder="Jelszó" minlength="8" required><br><br>
+                            <input type="submit" class="mx-auto d-block vgomb" value="Bejelentkezés">
+                        </form> 
+                    </div>
+                </article>
+                <aside class="col-md-6" style=" border: 1px solid white; color: white; text-align: center;">
+                    <div class="form mx-auto" style="width: 80%;">
+                        <h2>Regisztráció</h2>
+                        <form action="kezdolap.html">
+                            <label for="fname">Felhasználónév:</label><br>
+                            <input type="text" id="username" class="form-control"style="background-color: rgba(255, 255, 255, 0.089); border: none; border-bottom: 1px solid white; color: rgba(240, 248, 255, 0.726);" name="username" placeholder="Felhasználónév" required><br>
+                            <label for="fname">Email:</label><br>
+                            <input type="text" id="email" class="form-control"style="background-color: rgba(255, 255, 255, 0.089); border: none; border-bottom: 1px solid white; color: rgba(240, 248, 255, 0.726);" name="email" placeholder="valaki@gmail.com" required><br>
+                            <label for="lname">Jelszó:</label><br>
+                            <input type="password" id="pwd" class="form-control"style="background-color: rgba(255, 255, 255, 0.089); border: none; border-bottom: 1px solid white; color: rgba(240, 248, 255, 0.726);" name="pwd" placeholder="Jelszó" minlength="8"  required><br>
+                            <label for="lname">Jelszó megerősítése:</label><br>
+                            <input type="password" id="pwd_m" class="form-control"style="background-color: rgba(255, 255, 255, 0.089); border: none; border-bottom: 1px solid white; color: rgba(240, 248, 255, 0.726);" name="pwd-m" placeholder="Jelszó" minlength="8" required><br><br>
+                            <input type="submit" class="mx-auto d-block vgomb" value="Regisztráció">
+                        </form>
+                    </div> 
+                </aside>
             </div>
-        </article>
-        <aside class="col-md-6 row">
-            <div class="form">
-                <h2>Regisztráció</h2>
-                <form action="kezdolap.html">
-                    <label for="fname">Felhasználónév:</label><br>
-                    <input type="text" id="username" class="gomb" name="username" placeholder="Felhasználónév" required><br>
-                    <label for="fname">Email:</label><br>
-                    <input type="text" id="email" class="gomb" name="email" placeholder="valaki@gmail.com" required><br>
-                    <label for="lname">Jelszó:</label><br>
-                    <input type="password" id="pwd" class="gomb" name="pwd" placeholder="Jelszó" minlength="8"  required><br>
-                    <label for="lname">Jelszó megerősítése:</label><br>
-                    <input type="password" id="pwd_m" class="gomb" name="pwd-m" placeholder="Jelszó" minlength="8" required><br><br>
-                    <input type="submit" style="background-color: rgba(0, 0, 0, 0.068); border:1px solid white; border-radius: 10px;  width: 150px; height: 30px; color: white;
-                    transition: all 0.15s;" class="bgomb" value="Regisztráció">
-                </form>
-            </div> 
-        </aside>
+        </div>
+    </article>
     </main>
 </body>
 </html>

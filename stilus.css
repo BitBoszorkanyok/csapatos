@@ -101,16 +101,6 @@ p{
     margin-top: 10px;
 }
 
-.gomb{
-    color: white;
-    margin: 10px;
-    text-align: center;
-    border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0);
-    border: solid 2px rgb(255, 255, 255);
-    box-shadow: 5px 5px 10px rgb(224, 224, 224),
-                5px 5px 50px rgb(224, 224, 224);
-}
 .egomb{
     transition: all 2s;
     margin: 10px;
@@ -151,22 +141,6 @@ p{
     text-align: center;
     box-shadow: 5px 5px 10px rgb(224, 224, 224),
                 5px 5px 150px rgba(224, 224, 224, 0.596);
-}
-.bgomb{
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-    border: solid 1px rgb(255, 255, 255);
-    box-shadow: 5px 5px 10px rgb(224, 224, 224),
-                5px 5px 50px rgb(224, 224, 224);
-    transition: all 0.15s;
-    text-transform: uppercase;   
-    opacity: 0.8;    
-}
-.bgomb:hover {
-    cursor: pointer;
-    box-shadow: 5px 5px 10px rgb(224, 224, 224),
-                5px 5px 20px rgb(224, 224, 224);
-    transform: scale(1.1);
 }
 
 .cim{
