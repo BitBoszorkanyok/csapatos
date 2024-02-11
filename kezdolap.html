@@ -58,30 +58,38 @@
                 <div class="col-md-6">
                     <ul style="list-style-type: none;">
                         <li class="doboz offset-md-2">
-                            <h6>cim</h6>
-                            <a href="#fooldal"><button>Button</button></a>
+                            <h6>Milyen szerepet játszottak az inkvizíció és a középkori egyház a boszorkányüldözésekben?</h6>
+                            <button onclick="displayText('Válasz:', '  Az inkvizíció, amelyet eredetileg az eretnekségek felderítésére és elnyomására hoztak létre, később a boszorkányság elleni küzdelem fontos eszközévé vált. Az inkvizítorok boszorkányokat és mágikus gyakorlatokat kutattak, és súlyos büntetéseket szabtak ki a vádlottakra, gyakran kínzás és kivégzés formájában. Az egyház, különösen a katolikus egyház, hivatalosan is támogatta a boszorkányok elleni üldözést, és az inkvizíció aktív résztvevője volt a boszorkányperekben és az égetésekben..')">Válasz</button>
                         </li>
                         <li class="doboz offset-md-3">
-                            <h6>Valamilyen cím</h6>
-                            <a href="#fooldal"><button>Button</button></a>
+                            <h6>Mi a boszorkányság történelmi háttere és hogyan alakultak ki a boszorkányüldözések?</h6>
+                            <button onclick="displayText('Válasz:', 'A boszorkányság háttere a történelemben gazdag és bonyolult. A középkori és a kora újkori Európában a boszorkányság vádja és az azt követő üldözések szorosan kapcsolódtak a keresztény egyház hatalmi és vallási befolyásának erősödéséhez, valamint a középkori emberek világnézetéhez és hiedelmeihez. A középkorban az emberek sokféle természeti és társadalmi jelenséget, betegséget és szerencsétlenséget az istenek vagy a démonok beavatkozásának tulajdonítottak. Ez a hiedelemrendszer vezetett a boszorkánysággal kapcsolatos félelmek és üldözések kialakulásához.')">Válasz</button>
                         </li>
                         <li class="doboz offset-md-4">
-                            <h6>Másik cím</h6>
-                            <a href="#fooldal"><button>Button</button></a>
+                            <h6>Milyen szerepet játszottak az okkultizmus és az alkimia a boszorkányság elképzelésében és üldözésében?</h6>
+                            <button onclick="displayText('Válasz:', 'Az okkultizmus és az alkimia az ezoterikus tudományok körébe tartozott, amelyeket a középkorban és a kora újkorban sokan titokzatos és veszélyes erőkkel társítottak. Az okkultizmus és az alkimia gyakran összekeveredett a boszorkánysággal és a boszorkányok vádjával. Azokat az embereket, akik foglalkoztak az okkult tudományokkal vagy különféle mágikus gyakorlatokkal, gyakran boszorkánysággal vádolták, és az ilyen tevékenységek tiltottak és bűnöseknek minősültek.')">Válasz</button>
                         </li>
                         <li class="doboz offset-md-6">
-                            <h6>És még egy cím</h6>
-                            <a href="#fooldal"><button>Button</button></a>
+                            <h6>Hogyan változott meg a boszorkányság képe és a boszorkányokkal kapcsolatos nézetek az idők során?</h6>
+                            <button onclick="displayText('Válasz:', 'A boszorkányság és a boszorkányok képe az idők során sokat változott. A középkorban és a kora újkorban a boszorkányokat gyakran gonosz lényeknek és az ördög munkatársainak tekintették, akikkel a démoni erőkkel való szövetségben működtek. Az évszázadok során azonban ez a kép átalakult, és a boszorkányság sokkal inkább a népi hiedelmekhez és a mágikus gyakorlatokhoz kapcsolódott. A modern időkben a boszorkányság és a boszorkányok képe gyakran romantikus vagy spirituális jelentéssel rendelkezik, és sokan a boszorkányságot egyfajta önismereti útként vagy vallási gyakorlatként tekintenek rá.')">Válasz</button>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center align-items-center flex-column">
                     <div style="background-color: rgba(0, 0, 0, 0.356);border-radius: 50px; color: rgb(255, 255, 255);">
-                        <h2 style="text-align: center;">fsgpősldgs</h2>
-                        <p style="padding: 10px;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste esse laudantium saepe architecto cupiditate vero veritatis rerum maiores, assumenda quia accusamus qui voluptatem non. Cumque ad eos sint error minima.</p> 
+                        <h2 id="buttonHeader" style="text-align: center; padding-top: 10px;">Érdekességek</h2>
+                        <p id="buttonText" style="padding: 10px; text-align: center;">A válasz gombra kattintva érdekességeket tudhatsz meg.</p> 
                     </div>
                 </div>
             </div>
+            
+            <script>
+                function displayText(headerText, bodyText) {
+                    document.getElementById('buttonHeader').innerText = headerText;
+                    document.getElementById('buttonText').innerText = bodyText;
+                }
+            </script>
+
             <div class="tartalom" >
                 <img class="float-start img-fluid" src="https://www.meisterdrucke.hu/kunstwerke/500px/William_%28after%29_Blake_-_The_Witch_of_Endor_Raising_the_Spirit_of_Samuel_-_%28MeisterDrucke-1175179%29.jpg" title="Az endori boszorkány, aki felemeli Samuel szellemét. Alkotó: William Blake">
                 <h2 class="cim">A boszorkányok eredete</h2>
@@ -101,12 +109,14 @@
                     </ol>
             </div>
             <div class="tartalom" >
+                <img class="float-start img-fluid" src="https://wmn.hu/picture/110878/normal/291/00291627.jpeg" title=" Modern boszorkányság - Kép: WMN.hu">
                 <h2 class="cim">Modern boszorkányság</h2>
                 <p>A boszorkányokat gyakran gonoszként ábrázolják a tündérmesékben, vagy a sátáni okkultizmus gyakorlóiként az ijesztő filmekben. De a modern boszorkányság gyakorlói számára ez spirituális, erőt adó és varázslatos, inkább a lélekre fókuszál, egyik legfontosabb üzenete pedig az önismereten, az önmagunkkal való foglalkozáson alapul, méghozzá:amíg nem vagy jól és nem dolgozol önmagadon, nem várhatod az univerzumtól vagy bármilyen erőtől, hogy megsegítsen...</p>
                 <p>A boszorkányság a mágia gyakorlásának tevékenysége. Általában van egy spirituális összetevő, de van egy tévhit, hogy ez mindig egy valláshoz kapcsolódik. Vannak vallások, amelyek egy sor rituálét és ünnepet követnek, mint például a wicca és a pogányság típusai, de a boszorkányok nem mindig vallásosak. A mai boszorkányvarázslatokat általában arra használják, hogy megakadályozzák, hogy valaki rosszat tegyen vagy önmagának ártson. Ironikus módon, bár valószínű, hogy néhány történelmi boszorkány gonosz célokra használta a boszorkányságot, sokan magukévá tették a gyógyítás vagy a megvádolt erkölcstelenség elleni védekezés céljából.
                 </p>
             </div>
             <div class="tartalom">
+                <img class="float-end img-fluid" src="https://www.equip.org/wp-content/uploads/2023/07/YT-CBAB-What-is-Wrong-with-Wicca-1080-%C3%97-640-px.png" title="Wicca - Kép: Equip.org">
                 <h2 class="cim">Wicca</h2>
                 <p>A wicca lényegében egy olyan vallás, amely természeti és társas környezetünkkel való békés együttélést hirdeti, anélkül hogy a másik dolgába beavatkoznánk. A wiccások igyekeznek párhuzamot vonni saját maguk és a bibliahű kereszténység között, hogy ezáltal nagyobb legitimitásra tegyenek szert. A wicca kevésbé a hit, mint a tapasztalat és a rituálék vallása. Nyolc nagy ünnep van az év során, melyeket általában egy-egy rituálé jellemez. Minden évszak kezdetére és magasságára emlékeznek.</p>
                 <p>Jelenleg, amit a legtöbb wicca a legfontosabb ünnepnek tart, a Samhain. Samhainban az élők és holtak világa közötti fátyol a legvékonyabb, lehetővé téve a kapcsolatfelvételt az ősökkel és az elhunyt szeretteivel. Az ünnep a halált a természetes körforgás elengedhetetlen részeként ünnepli. Az idei évszakot ünneplő rituálék arra ösztönzik az embereket, hogy gyászolják az elhunytakat, elmélkedjenek saját végső halálukon, és gondoljanak azokra a dolgokra, amelyek „meg akarnak halni”, vagyis véget érnek az életükben, mint például a rossz szokások vagy egy rossz kapcsolat. Tavasszal az új születést és az új kezdeteket ünneplik a természetben és az emberek életében. Minden évszak különböző változásokat hoz, amelyekről meg kell emlékezni. 

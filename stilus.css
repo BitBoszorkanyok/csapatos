@@ -13,11 +13,12 @@ header{
 .tartalom>img{
     width: 40%;
     margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.664),
+                5px 5px 50px rgba(0, 0, 0, 0.658);
 }
 .tartalom{
     margin: 10px;
     background-color: rgba(255, 255, 255, 0.479);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .tartalom>h2{
     margin-top: 10px;
