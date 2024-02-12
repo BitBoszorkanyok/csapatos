@@ -190,8 +190,27 @@ p{
      margin-top: 20px; 
      margin-bottom: 10px;
 }
+.meretfozet{
+    width: 70%; 
+    margin: auto; 
+    margin-bottom: 2%; 
+    border-radius: 3%;
+}
+.meretfozet img{
+    margin-top: 20px;
+    width: 40%;
+    margin: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.664),
+                5px 5px 50px rgba(0, 0, 0, 0.658);
+}
 
 @media screen and (max-width: 800px) {
+    .meretfozet{
+        width: 90%; 
+        margin: auto; 
+        margin-bottom: 2%; 
+        border-radius: 3%;
+    }
     .carousel-item{
         padding-top: 10px;
         width: 40%;
@@ -216,6 +235,9 @@ p{
         position: static; 
     }
     .tartalom>img{
+        width: 90%;
+    }
+    .meretfozet>img{
         width: 90%;
     }
     .vgomb{
