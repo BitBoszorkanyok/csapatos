@@ -18,6 +18,13 @@ header{
     border: 1px solid white;
     color: white;
 }
+.diagram{
+    width: 80%; 
+    margin: 0 auto; 
+    margin-top: 20px; 
+    background: linear-gradient(to bottom, rgb(176, 117, 196), rgb(255, 255, 255)); 
+    margin-bottom: 10px;
+}
 .tartalom>img{
     width: 40%;
     margin: 10px;
@@ -287,6 +294,13 @@ p{
         margin: 0 auto;
          margin-top: 20px; 
          margin-bottom: 10px;
+    }
+    .diagram{
+        width: 90%; 
+        margin: 0 auto; 
+        margin-top: 20px; 
+        background: linear-gradient(to bottom, rgb(176, 117, 196), rgb(255, 255, 255)); 
+        margin-bottom: 10px;
     }
     
 }
