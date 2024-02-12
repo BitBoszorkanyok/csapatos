@@ -54,10 +54,10 @@
             <h2 style="text-align: center;">Rendelés</h2>
             <p style="text-align: center; margin-bottom: 3%;">Ezen az oldalon meg tudja rendelni az alábbi termékeinket!</p>
 
-            <div class="card" style="width:400px; padding-top: 5px; margin-right: 15%; margin-left: 5%;">
+            <div class="card" style="width:400px; padding-top: 10px; margin:auto;">
                 <img class="card-img-top" src="boszorkany_jatek.jpg" alt="boszorkany_jatek">
                 <div class="card-body">
-                  <h4 class="card-title">Boszorkány figura 7×6 cm</h4>
+                  <h4 class="card-title">Boszorkány figura 8×7 cm</h4>
                   <p class="card-text">Tökéletes bútordísznek, kisebb gyerekeknek ajándékba.</p>
                   <p>Ár: 1500 Ft</p>
                   <div class="form-check">
@@ -67,10 +67,10 @@
                 </div>
               </div>
               
-              <div class="card" style="width:400px; padding-top: 5px; margin-left: 15%">
+              <div class="card" style="width:400px; padding-top: 10px; margin: auto;">
                 <img class="card-img-top" src="boszorkany_puzzle.jpg" alt="boszorkany_puzzle">
                 <div class="card-body">
-                  <h4 class="card-title">Boszorkány puzzle 500 darabos</h4>
+                  <h4 class="card-title" style="text-align: center;">Boszorkány puzzle 500 darabos</h4>
                   <p class="card-text">Tökéletes játék kikapcsolódásra, akár ajándékba.</p>
                   <p>Ár: 2000 Ft</p>
                   <div class="form-check">
@@ -100,7 +100,7 @@
 
                 <div class="mb-3 mt-3">
                     <label for="email">Email cím:</label>
-                    <input type="email" class="form-control" id="email" placeholder="nev@gmail.com" name="szdatum" required>
+                    <input type="email" class="form-control" id="email" placeholder="Pl. nev@gmail.com" name="szdatum" required>
                 </div>
 
                 <div class="row">
@@ -116,39 +116,39 @@
 
                     <div class="mb-3 mt-3">
                         <label for="szcim">Szállítási cím:</label>
-                        <input type="text" class="form-control" id="szcim" placeholder="Utca neve pl. Mérnök" name="szcim" required>
+                        <input type="text" class="form-control" id="szcim" placeholder="Utca neve" name="szcim" required>
                         <div class="mb-3 mt-3">
-                            <input type="text" class="form-control" id="hszam" placeholder="Házszám pl. 39" name="hszam" required>
+                            <input type="text" class="form-control" id="hszam" placeholder="Házszám" name="hszam" required>
                         </div>
                     </div>
                     <div class="row" style="margin-bottom: 1%;">
-                        <div class="col">
-                            <input type="text" class="form-control" id="varos" placeholder="Város pl. Budapest" name="varos" required>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="varos" placeholder="Város" name="varos" required>
                         </div>
-                        <div class="col">
-                            <input type="text" class="form-control" id="megye" placeholder="Megye pl. Pest" name="megye" required>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="megye" placeholder="Megye" name="megye" required>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
-                            <input type="text" class="form-control" id="iszam" placeholder="Irányítószám pl. 1119" name="iszam" required>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="iszam" placeholder="Irányítószám" name="iszam" required>
                         </div>
-                        <div class="col">
-                            <input type="text" class="form-control" id="orszag" placeholder="Ország pl. Magyarország" name="orszag" required><br>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" id="orszag" placeholder="Ország" name="orszag" required><br>
                         </div>
                     </div>
                     <div class="row">
                         <label for="kartyanev">Bankkártya adatok:</label>
-                        <div class="col">
+                        <div class="col-md-6" style="margin-bottom: 1%;">
                             <input type="text" class="form-control" id="kartyanev" placeholder="Kártyán szereplő név" name="kartyanev" required>
                         </div>
-                        <div class="col">
+                        <div class="col-md-6" style="margin-bottom: 1%;">
                             <input type="text" class="form-control" id="kartyaszam" placeholder="Kártyaszám" name="kartyaszam" required>
                         </div>
-                        <div class="col">
+                        <div class="col-md-6">
                             <input type="text" class="form-control" id="kartyalejarat" placeholder="Lejárati dátum HH / ÉÉ" name="kartyalejarat" required>
                         </div>
-                        <div class="col">
+                        <div class="col-md-6">
                             <input type="text" class="form-control" id="cvc" placeholder="CVC szám" name="cvc" required>
                         </div>
                     </div><br>
