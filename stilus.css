@@ -143,7 +143,7 @@ p{
     box-shadow: 5px 5px 10px rgb(224, 224, 224),
                 5px 5px 150px rgba(224, 224, 224, 0.596);
 }
-vgomb{
+.gomb{
     margin: 10px;
     text-align: center;
     color: rgb(0, 0, 0);
