@@ -178,12 +178,24 @@ p{
 .dropdown:hover{
     display: block;
 }
+.meret{
+    width: 60%; 
+    margin: 0 auto; 
+    margin-top: 20px; 
+    background-image: url(23.jpeg);
+}
 
 @media screen and (max-width: 800px) {
     .carousel-item{
         padding-top: 10px;
         width: 40%;
         margin-left: 80px;
+    }
+    .meret{
+        width: 100%; 
+        margin: 0 auto; 
+        margin-top: 20px; 
+        background-image: url(23.jpeg);
     }
     .navbar-nav {
         flex-direction: column; 
@@ -199,6 +211,26 @@ p{
     }
     .tartalom>img{
         width: 90%;
+    }
+    .vgomb{
+        margin: 10px;
+        text-align: center;
+        color: rgb(250, 211, 255);
+        border-radius: 50px; 
+        background-color: rgba(0, 0, 0, 0);
+        border: solid 2px rgb(230, 137, 253);
+        box-shadow: 5px 5px 5px rgb(0, 0, 0),
+                    5px 5px 5px rgb(3, 1, 1);
+    }
+    .vgomb:hover{
+        transition: all 2s;
+        background-color: white;
+        color: black;
+        border-radius: 100px;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 5px 5px 10px rgb(224, 224, 224),
+                    5px 5px 150px rgba(224, 224, 224, 0.596);
     }
 }
 @media screen and (max-width:400px) {
